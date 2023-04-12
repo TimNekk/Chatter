@@ -72,10 +72,10 @@ public final class Client implements Runnable, AutoCloseable {
     }
 
     public void sendMessageToServer(String message) {
+        message = MessageValidator.prepare(message);
         if (!MessageValidator.isValid(message)) {
             return;
         }
-        message = MessageValidator.prepare(message);
 
         logger.debug("Sending message to server: {}", message);
         serverOut.println(message);
