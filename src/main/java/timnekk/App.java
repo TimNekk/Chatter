@@ -8,6 +8,10 @@ import picocli.CommandLine.Command;
 import picocli.CommandLine.Option;
 import picocli.CommandLine.ParameterException;
 
+import timnekk.client.Client;
+import timnekk.handlers.InputHandler;
+import timnekk.handlers.OutputHandler;
+
 @Command(name = "chatter", mixinStandardHelpOptions = true, description = "Chatter app", requiredOptionMarker = '*', abbreviateSynopsis = true)
 public class App implements Runnable {
     private static final Logger logger = LoggerFactory.getLogger(App.class);
@@ -21,7 +25,7 @@ public class App implements Runnable {
     @Override
     public void run() {
         logger.debug("Starting chatter");
-        try (Client client = new Client(host, port, System.in)) {
+        try (Client client = new Client(host, port, new InputHandler(System.in), new OutputHandler())) {
             client.run();
         } catch (Exception e) {
             logger.error("Error while running chatter: {}", e.getMessage());
