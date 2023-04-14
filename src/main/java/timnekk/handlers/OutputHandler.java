@@ -9,8 +9,4 @@ public class OutputHandler {
     public void showMessage(String message) {
         logger.info("{}", message);
     }
-
-    public void close() throws IOException {
-        // Do nothing
-    }
 }
