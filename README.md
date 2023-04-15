@@ -1,5 +1,5 @@
 <div align="center">
-  <img align="center" src="https://socialify.git.ci/TimNekk/Chatter/image?description=1&font=Inter&language=1&name=1&pattern=Plus&theme=Auto" alt="Chatter" width="640" height="320" />
+  <img align="center" src="https://socialify.git.ci/TimNekk/Chatter/image?description=1&font=Inter&language=1&name=1&pattern=Plus&theme=Light" alt="Chatter" width="640" height="320" />
 </div>
 
 ## Overview
