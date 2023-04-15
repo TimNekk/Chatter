@@ -1,12 +1,6 @@
-<h1 align="center">
-  <br>
-  <img src="https://play-lh.googleusercontent.com/Baek0GK58uDk6j1wRQQEDkrXcPXIVD2wypZqhg_Q4WXc1QE23DEl4GX1s7XJfj666FQ" alt="Gigapixel" height="240">
-  <br>
-  Chatter
-  <br>
-</h1>
-
-<h4 align="center">CLI Chatter client</h4>
+<div align="center">
+  <img align="center" src="https://socialify.git.ci/TimNekk/Chatter/image?description=1&font=Inter&language=1&name=1&pattern=Plus&theme=Auto" alt="Chatter" width="640" height="320" />
+</div>
 
 ## Overview
 
